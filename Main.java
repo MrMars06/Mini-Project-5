@@ -1,6 +1,7 @@
 class Main {
   public static void main(String[] args) {
-    counting(5);
+    counting(10);
+    test(5);
   }
 
   //test
@@ -11,6 +12,17 @@ class Main {
       System.out.println(a);
       a--;
       counting(a);
+    }
+  }
+
+  //another test
+  public static void test(int b){
+    if(b == 0){
+      System.out.println("Done!");
+    }else{
+      System.out.println("test");
+      b--;
+      test(b);
     }
   }
 }
